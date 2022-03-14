@@ -3,16 +3,16 @@
 using namespace std;
 
 
-Computer::Computer(char myName){
-	name=myName;
+Computer::Computer(char move){
+	move=move;
 }
 
-void Computer::setName(char myName){
-	name = myName;
+void Computer::setName(char move){
+	move = move;
 }
 
 char Computer::makeMove(){   //
-	return name;   ///
+	return move;   ///
 }  //
 
 Computer::~Computer()

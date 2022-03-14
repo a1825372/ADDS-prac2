@@ -3,16 +3,16 @@
 using namespace std;
 
 
-Human::Human(char myName){
-		name = myName;
+Human::Human(char move){
+		move = move;
 }
 
-void Human::setName(char myName){
-	name = myName;
+void Human::setName(char move){
+	move = move;
 }
 
 char Human::makeMove(){
-    return name;
+    return move;
 }
 
 Human::~Human()

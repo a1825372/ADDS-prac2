@@ -5,10 +5,10 @@ using namespace std;
 
 class Computer
 {
-    char name; //
+    char move; //
 public:
-    Computer(char myName);  //
-    void setName(char myName);      //
+    Computer(char move);  //
+    void setName(char move);      //
    // string getName();
     char makeMove();
  ~Computer(); //
