@@ -2,25 +2,18 @@
 #include "Human.h"
 using namespace std;
 
-Human::Human() {
-	name = "fart";
+
+Human::Human(string myName){
+	//	name = myName;
 }
 
 void Human::setName(string myName){
 	name = myName;
-
 }
 
-string Human::getName(){
+string Human::makeMove(){
     return name;
 }
-
-
-Human::Human(string myName){
-//	cout << "Humans's choice: " << myName << ". \n";
-
-}
-
 
 Human::~Human()
 {

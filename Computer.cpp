@@ -1,29 +1,19 @@
-
-// v1 = rand() % 3;         // v1 in the range 0 to 99
-
-
 #include <iostream>
 #include "Computer.h"
 using namespace std;
 
-Computer::Computer() {
-	name = "fart";
+
+Computer::Computer(string myName){
+//	name=myName;
 }
 
 void Computer::setName(string myName){
 	name = myName;
-
 }
 
-string Computer::getName(){
-	return name;
-}
-
-Computer::Computer(string myName){
-//	cout << "Computer's choice: " << myName << ". \n";
-
-}
-
+string Computer::makeMove(){   //
+	return name;   ///
+}  //
 
 Computer::~Computer()
 {

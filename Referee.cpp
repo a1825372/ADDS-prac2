@@ -5,21 +5,15 @@ using namespace std;
 
 
 char refGame(Human *player1, Computer *player2){
-    string player1Value = player1->getName();
-   // cout << player1Value<< endl;
-    string player2Value = player2->getName();
-   // cout << player2Value<< endl;
-
+    string player1Value = player1->makeMove();
+    string player2Value = player2->makeMove();
     if (player1Value == player2Value || player1Value == "R"){
         cout << "T" << endl;
     } else if (player1Value == "s" || player1Value == "S"){
         cout << "L" << endl;
     } else if (player1Value == "p" || player1Value == "P"){
         cout << "W" << endl;
-   } // } else {
-    //     cout << "" << endl
-    // }
-
+   }
     return 0;
     }
 
