@@ -5,13 +5,21 @@ using namespace std;
 
 
 char refGame(Human *player1, Computer *player2){
-    string player1Value = player1->makeMove();
-    string player2Value = player2->makeMove();
-    if (player1Value == player2Value || player1Value == "R"){
+    const char* R = "R";
+    const char* ss = "s";
+    const char* ls = "S";
+    const char* sp = "p";
+    const char* lp = "P";
+
+
+
+    char player1Value = player1->makeMove();
+    char player2Value = player2->makeMove();
+    if (player1Value == player2Value || player1Value == *R){
         cout << "T" << endl;
-    } else if (player1Value == "s" || player1Value == "S"){
+    } else if (player1Value == *ss || player1Value == *ls){
         cout << "L" << endl;
-    } else if (player1Value == "p" || player1Value == "P"){
+    } else if (player1Value == *sp || player1Value == *lp){
         cout << "W" << endl;
    }
     return 0;
@@ -19,10 +27,12 @@ char refGame(Human *player1, Computer *player2){
 
 int main()
 {
-	Computer *one= new Computer("r");//,3);
-    one -> setName("r");
+    const char* rock = "r";
 
-    string n;
+	Computer *one= new Computer(*rock);//,3);
+    one -> setName(*rock);
+
+    char n;
     cout << "Enter move: ";
     std::cin >> n;
 

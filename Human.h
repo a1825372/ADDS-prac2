@@ -5,12 +5,12 @@ using namespace std;
 
 class Human
 {
-    string name; //
+    char name; //
 public:
-    Human(string myName);
-    void setName(string myName);      //
+    Human(char myName);
+    void setName(char myName);      //
     string getName(); //
-    string makeMove();
+    char makeMove();
  ~Human();
 };
 #endif

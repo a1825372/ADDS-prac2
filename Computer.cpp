@@ -3,15 +3,15 @@
 using namespace std;
 
 
-Computer::Computer(string myName){
-//	name=myName;
+Computer::Computer(char myName){
+	name=myName;
 }
 
-void Computer::setName(string myName){
+void Computer::setName(char myName){
 	name = myName;
 }
 
-string Computer::makeMove(){   //
+char Computer::makeMove(){   //
 	return name;   ///
 }  //
 

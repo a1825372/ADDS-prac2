@@ -9,7 +9,7 @@ class Referee
 {
 public:
     Referee();
-    char refGame(Human player1, Computer player2);
+    string refGame(Human player1, Computer player2);
 
 
    // Referee(string myName);

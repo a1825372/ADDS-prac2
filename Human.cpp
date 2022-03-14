@@ -3,15 +3,15 @@
 using namespace std;
 
 
-Human::Human(string myName){
-	//	name = myName;
+Human::Human(char myName){
+		name = myName;
 }
 
-void Human::setName(string myName){
+void Human::setName(char myName){
 	name = myName;
 }
 
-string Human::makeMove(){
+char Human::makeMove(){
     return name;
 }
 
