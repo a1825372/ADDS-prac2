@@ -13,7 +13,7 @@ char refGame(Human *player1, Computer *player2){
     const char* lp = "P";
 
     char player1Value = player1->makeMove();
-    char player2Value = player2->makeMove();
+   // char player2Value = player2->makeMove();
 
     if (&player1Value == ss || &player1Value == ls){
         cout << "L" << endl;
